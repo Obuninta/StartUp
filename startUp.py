@@ -1,5 +1,5 @@
 import pandas as pd
-import seaborn as sns
+#import seaborn as sns
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
@@ -32,11 +32,11 @@ st.markdown("<br> <br>", unsafe_allow_html= True)
 st.markdown("<h2 style = 'top-margin: 0rem;text-align: center; color: #A2C579'>Project Introduction</h1>", unsafe_allow_html = True)
 st.markdown("<p style = 'text-align: justify; color: #AED2FF'>In the dynamic landscape of entrepreneurship, understanding and predicting the profitability of startup firms is crucial for investors, founders, and stakeholders alike. The project at hand employs a Linear Regression model to analyze and forecast the profitability of startup companies. Leveraging historical data on various startups, this study aims to unravel the key factors that influence a startup's success and provide valuable insights for making informed investment decisions. By delving into the intricate relationship between variables such as R&D expenditure, marketing spend, location, and industry, this project endeavors to shed light on the critical drivers of startup profitability, contributing to a more data-driven approach in the world of business.</p>", unsafe_allow_html = True)
 
-heat_map = plt.figure(figsize = (14, 7))
-correlation_data = data[['R&D Spend', 'Administration', 'Marketing Spend', 'Profit']]
-sns.heatmap(correlation_data.corr(), annot = True, cmap ="BuPu")
+# heat_map = plt.figure(figsize = (14, 7))
+# correlation_data = data[['R&D Spend', 'Administration', 'Marketing Spend', 'Profit']]
+# sns.heatmap(correlation_data.corr(), annot = True, cmap ="BuPu")
 
-st.write(heat_map)
+# st.write(heat_map)
 
 st.write('Unnamed: 0', axis = 1, inplace = True)
 st.write(data.sample(10))
