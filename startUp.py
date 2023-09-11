@@ -69,7 +69,7 @@ else:
     state = st.sidebar.select_slider('Select Your State Model', states)
 
 st.subheader("Your Inputted Data")
-input_var = pd.DataFrame([{'R&D Spend': research, 'Administration': admin, "Marketing Spend": marketing, 'State': state}])
+input_var = pd.DataFrame([{'R&D Spend': research, 'Administration': admin, "Marketing Spend": marketing}])
 st.write(input_var)
 
 st.markdown("<br>", unsafe_allow_html= True)
